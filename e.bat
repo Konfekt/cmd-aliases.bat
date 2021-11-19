@@ -8,7 +8,7 @@ rem strip trailing dots
 IF "%_chcp:~-1%"=="." set "_chcp=%_chcp:~0,-1%"
 
 IF DEFINED EDITOR (
-  IF EXIST %EDITOR% (
+  IF EXIST "%EDITOR%" (
     SET E=%EDITOR%
   ) ELSE (
     where /q %EDITOR%
