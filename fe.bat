@@ -38,7 +38,7 @@ IF ERRORLEVEL 1 (
 )
 
 IF DEFINED EDITOR (
-  IF EXIST %EDITOR% (
+  IF EXIST "%EDITOR%" (
     SET E=%EDITOR%
   ) ELSE (
     where /q %EDITOR%
