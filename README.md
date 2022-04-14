@@ -36,6 +36,7 @@ A few 'aliases' for Microsoft Windows' `cmd` prompt for fuzzy finding, grepping,
 - `rn.bat` as alias for [mmv](https://github.com/itchyny/mmv) to rename files in your `%EDITOR%`
 
 - `rm.bat` to delete a file or folder
+- `trash.bat` or `rmm.bat` to send a file or folder to the recycle bin
 
 ---
 
