@@ -12,7 +12,7 @@ SET TO_FOLDER=%ULTIMATE_ARG%
 call :DOS2UNIX %FROM_FOLDER% FROM_FOLDER_UNIX
 call :DOS2UNIX %TO_FOLDER% TO_FOLDER_UNIX
 
-SET RSYNC_ARGS=--archive --hard-links --executability --one-file-system --compress --delete --modify-window=1 --human-readable --info=stats1,progress2
+SET RSYNC_ARGS=--archive --hard-links --executability --compress --delete --modify-window=1 --human-readable --info=stats1,progress2
 rsync %RSYNC_ARGS% %ALLBUTLASTTWO_ARGS% %FROM_FOLDER_UNIX% %TO_FOLDER_UNIX%
 
 rem {{{ HELPER FUNCTIONS
