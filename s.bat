@@ -9,11 +9,11 @@ IF "%_chcp:~-1%"=="." set "_chcp=%_chcp:~0,-1%"
 
 where /q rg
 IF ERRORLEVEL 1 (
-  where /q ag
+  where /q ugrep
   IF ERRORLEVEL 1 (
     set s=findstr /spn
   ) ELSE (
-    set s=ag --color --heading --numbers --smart-case
+    set s=ugrep --pretty --smart-case
   )
 ) ELSE (
   set s=rg --pretty --smart-case

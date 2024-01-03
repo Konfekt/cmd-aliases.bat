@@ -24,17 +24,17 @@ where /q fd
 IF ERRORLEVEL 1 (
   where /q rg
   IF ERRORLEVEL 1 (
-    where /q ag
+    where /q ugrep
     IF ERRORLEVEL 1 (
       set fd="dir . /s/b/a:-d-h"
     ) ELSE (
-      set fd="ag --files-with-matches --unrestricted --ignore .git/ --nocolor --silent"
+      set fd="ugrep -R --files --hidden --smart-case --exclude-dir=.git --no-messages --"
     )
   ) ELSE (
-    set fd="rg --files --hidden --no-ignore --iglob !.git/ --color never"
+    set fd="rg --files --hidden --no-ignore --iglob !.git/ --color=never --no-heading --no-messages --"
   )
 ) ELSE (
-  set fd="fd --type file --hidden --no-ignore --exclude .git/ --color never --fixed-strings"
+  set fd="fd --type file --hidden --no-ignore --exclude .git/ --color=never --fixed-strings"
 )
 
 IF DEFINED EDITOR (

@@ -1,10 +1,10 @@
 A few 'aliases' for Microsoft Windows' `cmd` prompt for fuzzy finding, grepping, ..., implemented as batch files.
 
-- `s.bat` to grep for a regular expression (using [ripgrep](https://chocolatey.org/packages/ripgrep) or [ag](https://chocolatey.org/packages/ag) for searching and [less](https://chocolatey.org/packages/less) for paging the results, whenever available)
+- `s.bat` to grep for a regular expression (using [ripgrep](https://chocolatey.org/packages/ripgrep) or [ugrep](https://chocolatey.org/packages/ugrep) for searching and [less](https://chocolatey.org/packages/less) for paging the results, whenever available)
 
 ---
 
-- `fe.bat` to fuzzy find a file to be edited in `%EDITOR%`, `vim` or `notepad` (using [fd](https://chocolatey.org/packages/fd), `ripgrep` or `ag` as file finder and [fzf](https://chocolatey.org/packages/fzf) or [peco](https://chocolatey.org/packages/peco) as fuzzy selector, whenever available)
+- `fe.bat` to fuzzy find a file to be edited in `%EDITOR%`, `vim` or `notepad` (using [fd](https://chocolatey.org/packages/fd), `ripgrep` or `ugrep` as file finder and [fzf](https://chocolatey.org/packages/fzf) or [peco](https://chocolatey.org/packages/peco) as fuzzy selector, whenever available)
 - `fo.bat` to fuzzy find a file to be opened (with its standard application)
 - `ff.bat` to fuzzy find a folder to be switched to
 
